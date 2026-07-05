@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vũ Trụ Số Nguyên Tố</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    
+    <div class="container glass-panel">
+        <header>
+            <h1 class="glow-text">Vũ Trụ Số Nguyên Tố</h1>
+            <p>Khám phá bí ẩn của những con số! Nhập các số cách nhau bởi dấu phẩy (,) nhé.</p>
+        </header>
+
+        <main>
+            <div class="input-group">
+                <input type="text" id="numberInput" placeholder="Ví dụ: 2, 5, 10, 17..." autocomplete="off">
+                <button id="checkBtn">Bắt đầu khám phá!</button>
+            </div>
+            
+            <div id="errorMsg" class="error-msg hidden">Ôi, hình như bạn nhập sai định dạng rồi. Chỉ nhập số và dấu phẩy thôi nhé!</div>
+            
+            <div id="resultsContainer" class="results-grid">
+                <!-- Các thẻ kết quả sẽ hiển thị ở đây -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal cho cây phân tích thừa số nguyên tố -->
+    <div id="treeModal" class="modal hidden">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" id="closeModalBtn">&times;</span>
+            <h2 id="modalTitle">Phân tích số</h2>
+            <div id="treeContainer" class="tree-container">
+                <!-- Cây sẽ được sinh ra ở đây -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Thư viện canvas-confetti để bắn pháo giấy -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
