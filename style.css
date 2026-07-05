@@ -350,3 +350,21 @@ button:active {
 .tree-node-wrapper:first-child::after {
     border-radius: 15px 0 0 0;
 }
+
+/* --- Gemini Logo --- */
+.gemini-logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: auto;
+    z-index: 1000;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+    cursor: pointer;
+}
+
+.gemini-logo:hover {
+    transform: scale(1.1) rotate(5deg);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+}
